@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/textA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:layout_marginTop="15dp"
+        android:textSize="50sp"/>
+
+    <Button
+        android:id="@+id/buttonA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:backgroundTint="#D3D3D3"
+        android:onClick="increment3"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"/>
+
+    <Button
+        android:id="@+id/buttonA2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_2_points"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:backgroundTint="#D3D3D3"
+        android:onClick="increment2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"/>
+
+    <Button
+        android:id="@+id/buttonA3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:backgroundTint="#D3D3D3"
+        android:onClick="increment1"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="15dp"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/textB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:layout_marginTop="15dp"
+            android:textSize="50sp"/>
+
+        <Button
+            android:id="@+id/buttonB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:backgroundTint="#D3D3D3"
+            android:onClick="incrementB3"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:id="@+id/buttonB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 Points"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:backgroundTint="#D3D3D3"
+            android:onClick="incrementB2"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"/>
+
+        <Button
+            android:id="@+id/buttonB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Throw"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:backgroundTint="#D3D3D3"
+            android:onClick="incrementB1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:onClick="resetAll"
+            android:layout_marginBottom="36dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
